@@ -1,1 +1,5 @@
 *.png
+*.html
+*.Rhistory
+
+!*index.html

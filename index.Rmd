@@ -20,6 +20,13 @@ img.screenshot{
     border: 1px solid rgba(0, 0, 0, 0.5);
     margin: 7px 7px 13px 7px; <!-- top right bottom left --> 
   }
+  
+h1 {
+  font-weight: bold; 
+  padding-top: 15px; 
+}
+  
+}
 </style>
 
 </html>
@@ -81,7 +88,7 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 <li>Click on the green "Code" button and copy the HTTPS path using the clipboard button </li> 
 <img class= "screenshot" src="img/03-process-01-clone-01.png"> 
 <li>Go to the place on your machine where you want to have the code </li>
-<i>Note: </i>Interacting with GitHub will be much faster if you put the code directly on your machine rather than on hal 
+<i>Note: </i>Interacting with GitHub will be much faster if you put the code directly on your machine rather than on your personal hal folder 
 <li>Right click in the folder and select "Git Bash Here" </li>
 <img class= "screenshot" src="img/03-process-01-clone-02.png"> 
 <li>Git Bash window will appear with the path reflecting the path  </li>
@@ -139,4 +146,11 @@ Most often the `<branch>` you will be working on is `main` or `master`.
 * `git add --all` to stage all files 
 * `git commit -m '<message>'` to commit changes 
 * `git push origin <branch>` to send changes to GitHub so others can access 
+
+
+# Common Commands
+
+```{r child = "commands.Rmd"}
+
+```
 
