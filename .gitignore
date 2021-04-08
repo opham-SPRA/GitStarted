@@ -1,5 +1,6 @@
 *.png
 *.html
 *.Rhistory
+*.pptx
 
 !*index.html

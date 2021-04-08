@@ -19,6 +19,7 @@ img.screenshot{
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     margin: 7px 7px 13px 7px; <!-- top right bottom left --> 
+    align: center; 
   }
   
 h1 {
@@ -137,15 +138,25 @@ Most often the `<branch>` you will be working on is `main` or `master`.
 <img class= "screenshot" src="img/03-process-02-edit-07.png"> 
 </ol>
 
-### Simple Review {.unnumbered}  
+### Simple Review   
 
-* `git pull origin <branch>`; to update code 
-* Make edits to files 
+* **PULL:** `git pull origin <branch>`; to update code 
+* **EDIT:** Make edits to files 
 * *Optional:* `git status` to view which files have changed
 * *Optional:* `git diff` to view line by line changes 
-* `git add --all` to stage all files 
-* `git commit -m '<message>'` to commit changes 
-* `git push origin <branch>` to send changes to GitHub so others can access 
+* **STAGE:** `git add --all` to stage all files 
+* **COMMIT:**`git commit -m '<message>'` to commit changes 
+* **PUSH:** `git push origin <branch>` to send changes to GitHub so others can access 
+
+### Flow Charts
+
+
+![](img/git-flow-chart-v1.png)  
+  
+<br><br>  
+![](img/git-flow-chart-v2.png)
+
+
 
 
 # Common Commands
