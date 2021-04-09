@@ -29,7 +29,7 @@ tribble(
     , "`git diff <file>`"          , "View changes for a specific `<file>`; if you just use `git diff` all changes for all files will be shown. If you have a lot of changes it will end with an `(END)` on the screen, to quit this screen press the `Q` key"
     , "`git diff --stat --cached origin/<branch>`", "List of files that have been commited (list of files that will be included in next `git push`)"
     , "`git reset`"                , "Undo `git add`; will un-stage all files; can also use `git reset <file>` to unstage specific file"
-    , "`git checkout <file>`"      , "Revert `<file>` to previous commit"
+    , "`git checkout <file>`"      , "Revert `<file>` to most recent commit on local repo"
     , "`git checkout <branch>`"    , "Switch to a specific `<branch>`"
     , "`git checkout -b <branch>`" , "Create a new `<branch>` and switch to that `<branch>`"
   ) %>%
