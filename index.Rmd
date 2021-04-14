@@ -155,7 +155,9 @@ Most often the `<branch>` you will be working on is `main` or `master`.
   
 <br><br>  
 ![](img/git-flow-chart-v2.png)
-
+  
+<br><br>  
+![](img/git-flow-chart-v3.png)
 
 
 
