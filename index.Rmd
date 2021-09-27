@@ -42,7 +42,7 @@ Using Git and GitHub is a great way to code collaborativly on projects.  Please 
 
 Go to [git-scm.com/download](https://git-scm.com/downloads) and click on the "Windows" link under "Downloads on the main screen.  
 
-<img class= "screenshot" src="img/01-downloadgitbash.PNG"> 
+<img class= "screenshot" src="img/downloadgit/downloadgitbash.PNG"> 
 
 
 **Update Git Bash**
@@ -56,7 +56,7 @@ git update-git-for-windows
 
 ### Go to GitHub {.unnumbered}
 Go to [github.com](https://github.com/) and click either on the large green button "Sign Up for GitHub" in the middle of the page or the small button "Sign Up" in the top right corner of the page.  
-<img class= "screenshot" src="img/02-github-01-button.PNG">
+<img class= "screenshot" src="img/creategithub/01githubbutton.PNG">
 
 ### Create Your Account {.unnumbered}
 1. Create your own personal username 
@@ -67,7 +67,7 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 * *Optional:* un-check box so you don't recieve additional emails from GitHub
 * *Note:* You may have to 'verify' account by completing some Captcha. 
 
-<img class= "screenshot" src="img/02-github-02-enter.PNG">  
+<img class= "screenshot" src="img/creategithub/02githubenter.PNG">  
 
 
 ## Access Repositories 
@@ -75,7 +75,7 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 1. Inform relavent colleague(s) of the username you created (it's usually Josh)
 1. Once username is given, individuals can give you an invitation to access to a repository, which you will receive via email 
 1. Accept the invitation by clicking "View Invitation" button sent in the email.  This will take you to the GitHub page and now you can access the repository.
-<img class= "screenshot" src="img/02-github-03-invites.png"> 
+<img class= "screenshot" src="img/creategithub/03githubinvite.png"> 
 
 
 
@@ -87,18 +87,18 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 <ol>
 <li>Go to repository webpage </li>
 <li>Click on the green "Code" button and copy the HTTPS path using the clipboard button </li> 
-<img class= "screenshot" src="img/03-process-01-clone-01.png"> 
+<img class= "screenshot" src="img/createclone/01clone.png"> 
 <li>Go to the place on your machine where you want to have the code </li>
 <i>Note: </i>Interacting with GitHub will be much faster if you put the code directly on your machine rather than on your personal hal folder 
 <li>Right click in the folder and select "Git Bash Here" </li>
-<img class= "screenshot" src="img/03-process-01-clone-02.png"> 
+<img class= "screenshot" src="img/createclone/02clone.png"> 
 <li>Git Bash window will appear with the path reflecting the path  </li>
-<img class= "screenshot" src="img/03-process-01-clone-03.png"> 
+<img class= "screenshot" src="img/createclone/03clone.png"> 
 <li>Write the command `git clone <repo HTTPS path>` where `<repo HTTPS path>` is the url from step 1; press Enter</li> 
 <i>Note:</i> You can't copy/paste using Ctr+C/Ctr+V, but you can copy/paste using Ctr+C/Shift+Insert  
-<img class= "screenshot" src="img/03-process-01-clone-04.png"> 
+<img class= "screenshot" src="img/createclone/04clone.png"> 
 <li> A folder will appear which has the same name as the repository, all files from the repo will be download there (in this example it's just a README.md file)</li> 
-<img class= "screenshot" src="img/03-process-01-clone-05.png"> 
+<img class= "screenshot" src="img/createclone/05clone.png"> 
 </ol>
 
 ## Make Edits to Code  
@@ -106,36 +106,34 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 <ol>
 <li> Go into repository folder on machine, right click and select "Git Bash Here" </li> 
 <li> **PRIOR TO MAKING ANY EDITS PULL MOST RECENT CODE FROM REPO:** `git pull origin <branch>`</li> 
-Most often the `<branch>` you will be working on is `main` or `master`.  The branch you are working on will show up in blue font in parenthesis in the git bash window. Pulling the most recent code is essential for collaborative coding, this helps prevents conflicts to the code if edits are made on multiple different versions.  
-<center> 
-<i> Example: Code on Machine Already Up-to-Date (no changes were made)</i> 
- <img class= "screenshot" src="img/03-process-02-edit-01a.png"> 
-<i> Example: Code on Machine Updated (changes to code on machine)</i> 
- <img class= "screenshot" src="img/03-process-02-edit-01b.png"> 
-</center>  
+Most often the `<branch>` you will be working on is `main` or `master`.  The branch you are working on will show up in blue font in parenthesis in the git bash window. Pulling the most recent code is essential for collaborative coding, this helps prevents conflicts to the code if edits are made on multiple different versions.  <br>
+<i>Example: Code on Machine Already Up-to-Date (no changes were made)</i> 
+ <img class= "screenshot" src="img/editcode/01edit.png"> <br>
+<i>Example: Code on Machine Updated (changes to code on machine)</i> 
+ <img class= "screenshot" src="img/editcode/02edit.png"> 
 <li> After you have pulled any changes, now you can start editing your document </li>
 <li> After edits are complete, repeat step 1 to open the git bash window </li> 
 <li> See which files were added, edited, or deleted using `git status` </li> 
 In this case, I have made edits to the README.md file.  
- <img class= "screenshot" src="img/03-process-02-edit-02.png"> 
+ <img class= "screenshot" src="img/editcode/03edit.png"> 
 <li> Review the changes by using `git diff` </li>
 `git diff` will show all changes for any file, if you only want to look at changes for a specific file use `git diff <file>`.  
 Red font means that text has been deleted and green font means that text has been added.  
-<img class= "screenshot" src="img/03-process-02-edit-03.png"> 
+<img class= "screenshot" src="img/editcode/04edit.png"> 
 <li> Once you are comfortable with your changes you need to stage the files, or 'add' them so they can be committed.  </li>
   <ul>
   <li> `git add --all` will stage all files that are listed after the `git status` command </li>
   <li> `git add <file>` will add only a specific file </li>
   <li> `git add *.R` will add all files that have a .R extension (stage all R scripts) 
   </ul>
-<img class= "screenshot" src="img/03-process-02-edit-04.png">
+<img class= "screenshot" src="img/editcode/05edit.png">
 <li> Check that your files have been staged by using the `git status` command again, files that were in red font should now be in green font, indicating that they have been staged and are ready to be committed.  
-<img class= "screenshot" src="img/03-process-02-edit-05.png"> 
+<img class= "screenshot" src="img/editcode/06edit.png"> 
 <li> Commit changes using `git commit -m '<message>'` where `<message>` is a short description of the edits.  
-<img class= "screenshot" src="img/03-process-02-edit-06.png"> 
+<img class= "screenshot" src="img/editcode/07edit.png"> 
 <li> Finally, push your commits to GitHub using `git push origin <branch>`
 Most often the `<branch>` you will be working on is `main` or `master`.
-<img class= "screenshot" src="img/03-process-02-edit-07.png"> 
+<img class= "screenshot" src="img/editcode/08edit.png"> 
 </ol>
 
 ### Simple Review   
@@ -159,6 +157,24 @@ Most often the `<branch>` you will be working on is `main` or `master`.
 <br><br>  
 ![](img/git-flow-chart-v3.png)
 
+## Update Remote Link  
+
+<ol>
+<li> Go into repository on GitHub, click the green "Code" button and copy the HTTPS url </li> 
+<li> Got to the repository folder on your machiene, right click and select "Git Bash Here" </li>
+<li> Change the remote link with the following: 
+``` bash
+git config remote set-url origin <new-url>
+```
+<li> Check to see if the link has been updated using: <li>
+``` bash
+git config --get remote.origin.url
+```
+The URL should now be the updated version. <br>
+<img class= "screenshot" src="img/updateremotelink/03changeremote.PNG"> 
+
+
+</ol>
 
 
 # Common Commands
