@@ -2,5 +2,9 @@
 *.html
 *.Rhistory
 *.pptx
+.Rproj.user
+*.Rproj
+
 
 !*index.html
+
