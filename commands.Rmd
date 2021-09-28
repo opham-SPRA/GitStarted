@@ -50,7 +50,7 @@ tribble(
 
 **What if I want to ignore any differences on my clone and 'reset' to the version on GitHub?** 
 
-1. `git fetch origin`  
+1. `git fetch origin <branch>`  
 This will get the most recent versions from GitHub  
 1. `git reset --hard origin/<branch>`  
 This will change all files in your clone repository to match the most up-to-date version from GitHub  
