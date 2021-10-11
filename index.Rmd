@@ -89,7 +89,7 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 <li>Click on the green "Code" button and copy the HTTPS path using the clipboard button </li> 
 <img class= "screenshot" src="img/createclone/01clone.png"> 
 <li>Go to the place on your machine where you want to have the code </li>
-<i>Note: </i>Interacting with GitHub will be much faster if you put the code directly on your machine rather than on your personal hal folder 
+<i>Note: </i>Interacting with GitHub will be much faster if you put the code directly on your machine rather than on your personal hal folder.  I like to keep all my clones `C:\PROJECT-CLONES`.  This also makes the pathways shorter because it doesn't inlcude your name.  
 <li>Right click in the folder and select "Git Bash Here" </li>
 <img class= "screenshot" src="img/createclone/02clone.png"> 
 <li>Git Bash window will appear with the path reflecting the path  </li>
