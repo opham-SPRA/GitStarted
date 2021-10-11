@@ -132,7 +132,7 @@ Red font means that text has been deleted and green font means that text has bee
 <li> Commit changes using `git commit -m '<message>'` where `<message>` is a short description of the edits.  
 <img class= "screenshot" src="img/editcode/07edit.png"> 
 <li> Finally, push your commits to GitHub using `git push origin <branch>`
-Most often the `<branch>` you will be working on is `main` or `master`.
+Most often the `<branch>` you will be working on is `main` or `master`.  Originally, the default branch was always called 'master'.  Starting in fall 2020, GitHub changed the default branch name to be 'main'.   
 <img class= "screenshot" src="img/editcode/08edit.png"> 
 </ol>
 
